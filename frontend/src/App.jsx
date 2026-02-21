@@ -4,7 +4,7 @@ import './App.css'
 import AnalysisResult from './components/AnalysisResult'
 import ChatBox from './components/ChatBox'
 
-const API_BASE_URL = 'http://localhost:8000'
+const API_BASE_URL = 'https://clausegaurd.onrender.com'
 
 function App() {
   const [text, setText] = useState('')
