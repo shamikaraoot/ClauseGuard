@@ -16,7 +16,7 @@ app = FastAPI(title="ClauseGuard API", version="1.0.0")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://clause-gaurd.vercel.app/"] # Vite default port
+    allow_origins=["https://clawse-guard.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -129,6 +129,3 @@ async def chat(request: ChatRequest):
             detail=f"Internal server error: {str(e)}"
         )
 
-
-if __name__ == "__main__":
-    import uvicorn
